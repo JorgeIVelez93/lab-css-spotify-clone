@@ -64,17 +64,18 @@ h2 {
     font-size: 1.5vw;
     
 }
-.info > h3 {
+.info h3 {
 text-align: center;
 font-size: 2vw;
-/* text-decoration: underline;
+text-decoration: underline;
 text-decoration-color: #1AB16A;
-text-decoration-skip-ink: none; */
+text-decoration-skip-ink: none;
+text-underline-position: under;
 /* display: flex;
 justify-content: center; */
-border-bottom: .25vw solid #1AB16A;
-margin: 0 41vw;
+/* border-bottom: .25vw solid #1AB16A; */
 padding-top: 2.5vh;
+/* width: 41vw; */
 }
 .promo  {
     display: flex;
@@ -88,11 +89,13 @@ padding-top: 2.5vh;
     width: 6vw;
     height: auto;
 }
-.promo h4 {
-    font-size: 1.5vw;
-}
+/* .promo h4 {
+    
+} */
 .promo p {
-    font-size: 1.51vw;
+    font-size: 1.5vw;
+    margin: 0 5vw;
+    color: #888888
 }
 .cards {
 display: flex;
@@ -102,13 +105,11 @@ justify-content: space-between;
 width: 25vw;
 text-align: center;
 }
-.cards >p {
-    margin: 0 5vw;
-    color: #888888
-}
+
 .cards h4 {
     color: #1AB16A;
-    margin: 1vw 0;;
+    margin: 1vw 0;
+    font-size: 1.5vw;
 }
 .footer{
     background-color: #1AB16A;
@@ -118,26 +119,29 @@ text-align: center;
     align-items: center;
     padding: 3vw 5vw;
     color :white;
-    font-weight: bold;
+    font-weight: 900;
     background-image: url(/images/spotify-icon-white.png);
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: center;
+    margin: 1vw 2vw;
 }
 .end > h3 {
     /* text-decoration: underline; */
     /* font-size: 2.5rem; */
     /* text-decoration-skip-ink: none; */
     font-size: 2.5vw;
-    border-bottom: .25vw solid white;;
+    border-bottom: .25vw solid white;
     
 }
 .end > h4 {
     font-size: 1.75vw;
+    font-weight: bold;
 }
 .end p {
     font-size: 1.25vw;
     width: 20vw;
+    font-weight: 200;
 }
 .image1 {
     width: 7vw;
@@ -178,4 +182,45 @@ align-items: center;
 .kanye img {
 width: 25vw;
 height: auto; 
+}
+
+@media (max-width: 426px){
+li > a {
+    font-size: 2vw;
+    width: 50vw;
+} 
+ul {
+    width: 40vw;
+}
+nav > img {
+    width: 25vw;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info h3 {
+    font-size: 6vw;
+}
+.info h4  {
+    font-size: 5vw;
+}
+.info p {
+    font-size: 4vw;
+}
+.info div {
+    margin: 2vw 0;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    width: 50vw;
+}
+.cards > img {
+    width: 30vw
+}
 }
